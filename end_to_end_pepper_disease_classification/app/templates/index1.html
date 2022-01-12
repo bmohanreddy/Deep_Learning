@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <title>Pepper-Plant_Disease</title>
+</head>
+<body>
+<div>
+    <div class="left">
+        <h4>DO YOU WANT TO KNOW YOUR ?</h4>
+        <h1>PEPPER PLANT DISEASE</h1>
+        <div class="file-input">
+            <div>
+                <form method="post",  action="/predict" enctype="multipart/form-data">
+                    <input type="file" id="file"  class="file" name="file">
+                     <label for="file">BROWSE IMAGE</label><br>
+                    <input class="predict_bt" type="submit" value="PREDICT DISEASE" name="">
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if result %}
+    <div class="right">
+        <div class="mar">
+            <p>Pepper Plant Disease is :<br>
+                <span>{{result.class_name}}</span></p>
+            <p>Confidence is :<br>
+                <span>{{result.confidance}}</span></p>
+        </div>
+
+    </div>
+    {% endif %}
+
+</div>
+</body>
+</html>

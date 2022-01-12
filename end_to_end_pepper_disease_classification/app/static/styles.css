@@ -1,0 +1,103 @@
+body{
+  background-color: #064635;
+}
+
+.left, .right{
+	height: 80%;
+	width: 50%;
+	position:absolute;
+	z-index: 1;
+	margin-left: 5%;
+	margin-top: 4%;
+}
+.left{
+	left: 0;
+	background-color:#FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgb(0,0,0,.3);
+}
+
+.right{
+	right: 0;
+}
+
+
+h4{
+	color:#FF6363;
+	font-family: "Segoe UI";
+	margin-top: 10px;
+	font-weight: bold;
+	font-size:16px;
+	padding-top: 90px;
+	padding-left: 48px;
+	margin-bottom: 0px;
+	padding-right: 48px;
+
+}
+
+p{
+	color:white;
+	font-family: "Segoe UI";
+	font-weight: normal;
+	font-size:16px ;
+	padding-left:120px;
+	padding-right:32px;
+}
+
+.file {
+  opacity:0;
+  width: 10px;
+  height: 20px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 70px;
+}
+
+.file-input{
+	width:300px;
+	height:56px;
+	border-radius: 4px;
+	background:linear-gradient(40deg,#7900FF, #93FFD8);
+	display: flex;
+	align-items:;
+	justify-content:center;
+	color: white;
+	font-weight: bold;
+	font-family: "Segoe UI";
+	margin-left: 48px;
+}
+
+
+.predict_bt{
+	margin-top: 48px;
+	border: none;
+	width:300px;
+	height: 56px;
+	font-family: "Segoe UI";
+	font-weight: bold;
+	border-radius:4px;
+	background:linear-gradient(40deg,#FF6363, #FFAB76);
+	box-shadow: 0 8px 20px #FCD2D1;
+	color:white;
+}
+
+h1{
+	color: #1C6DD0;
+	font-family: "Segoe UI";
+	font-weight: bold;
+	font-size:32px ;
+	padding-left:48px;
+	margin-top:0px;
+	padding-right:32px;
+}
+span{
+	color:white;
+	font-family: "Segoe UI";
+	font-weight: bold;
+	font-size:32px ;
+	color: #FFCC1D;
+}
+
+.mar{
+	margin-top: 25%;
+}

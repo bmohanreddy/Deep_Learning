@@ -1,0 +1,6 @@
+fastapi
+tensorflow
+Jinja2
+uvicorn
+numpy
+python-multipart
